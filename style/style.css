@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header { 
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    
+}
+h1 {
+    font-family: "Passion One";
+    text-align: center;
+    color: white;
+    font-size: 6em;
+    padding-top: 0.5em;
+   
+}
+
+header h1 span {
+    display: inline-block;
+    margin: 0 0.04em;
+}
+header h1 span::first-letter {
+    font-size: 1.45em;
+  
+}
+
+header > p { 
+    font-family: verdana, arial, sans-serif;
+    font-weight: light;
+    color: white;
+    font-size: 1em;
+    padding-bottom: 3em;
+
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: #f0f0f0;
+}
+
+pre { 
+    font-family: "Sriracha", cursive;
+    color: #000000;
+    font-size: 2.8em;
+    font-weight: normal;
+    text-align: left;
+    padding-top: 1.5em;
+    margin-left: 0.7em;
+
+}
+section { 
+    padding-bottom: 50px;
+}
+
+#flor {
+    background-image: url('../images/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+#flor pre { 
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#pagina { 
+    background-image: url('../images/background002.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#pagina pre { 
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    font-size: 6px;
+    text-align: center;
+    color: #ffffff;
+    padding: 1px
+}
