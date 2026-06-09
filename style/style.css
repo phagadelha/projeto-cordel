@@ -3,49 +3,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", cursive;
+    --fonte3: "Sriracha", cursive;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-header { 
+html, body {
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: var(--fonte1);
+}
+header {
     background-color: black;
     text-align: center;
     color: #ffffff;
     
 }
-h1 {
-    font-family: "Passion One";
-    text-align: center;
-    color: white;
-    font-size: 8vw;
-    padding-top: 0.5em;
+header > h1 {
+    font-family: var(--fonte2); 
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: clamp(2rem, 8vw, 5rem);
+    
    
 }
 
-header h1 span {
-    display: inline-block;
-    margin: 0 0.04em;
-}
-header h1 span::first-letter {
-    font-size: 11vw;
-  
-}
-
 header > p { 
-    font-family: verdana, arial, sans-serif;
+    padding-bottom: 50px;
     font-weight: light;
     color: white;
-    font-size: 1.5vw;
-    padding-bottom: 3em;
+    font-size: 1.1vw;
+    
 
 }
 header a {
     color: white;
     text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 header a:visited {
@@ -59,51 +58,46 @@ body {
     background-color: #f0f0f0;
 }
 
-pre { 
-    font-family: "Sriracha", cursive;
-    color: #000000;
-    font-size: 3.5vw;
-    font-weight: normal;
-    text-align: left;
-    padding-top: 1.5em;
-    margin-left: 0.7em;
+section > pre {
+    font-family: var(--fonte3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: clamp(1.1rem, 2.5vw, 2.5rem)
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(0, 0, 0);
 
 }
-section { 
-    padding-bottom: 50px;
+
+section.image { 
+    color: white    ;
+}
+
+section.image > pre { 
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
 }
 
 #flor {
     background-image: url('../images/background001.jpg');
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
-   
-}
-#flor pre { 
-    display: inline-block;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background-attachment: fixed;   
 }
 
-#pagina { 
+#page { 
     background-image: url('../images/background002.jpg');
-    background-position: center center;
+    background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-#pagina pre { 
-    display: inline-block;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
 }
 
 footer {
@@ -111,5 +105,16 @@ footer {
     font-size: 6px;
     text-align: center;
     color: #ffffff;
-    padding: 1px
+    padding: 10px
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:visited {
+    color: white;
+}
+footer a:hover {
+    text-decoration: underline;
 }
